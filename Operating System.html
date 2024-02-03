@@ -32,13 +32,102 @@
 <div class="container">
     <div class="jumbotron Content3C">
         <h2>1. This approach is used just to ignore the deadlock problem altogether.</h2>
-        <h3><button class="btn btn-info" onclick="">A. ostrich</button></h3>
-        <h3><button class="btn btn-info" onclick="">B. Avoidance</button></h3>
-        <h3><button class="btn btn-info" onclick="">C. recovery</button></h3>
-        <h3><button class="btn btn-info" onclick="">D. prevention</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeGreen1" onclick="Correct1()">A. ostrich</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeRed1" onclick="Wrong1()">B. Avoidance</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeRed01" onclick="Wrong1()">C. recovery</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeRed001" onclick="Wrong1()">D. prevention</button></h3>
     </div>
 </div>
 
+<div class="container">
+    <div class="jumbotron Content3C">
+        <h2>2. The process of actuallly determining that a deadlock exist and identifying the processes.</h2>
+        <h3><button class="btn btn-info" id="btn-changeGreen2" onclick="Correct2()">A. Detection</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeRed2" onclick="Wrong2()">B. Prevention</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeRed02" onclick="Wrong2()">C. Recovery</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeRed002" onclick="Wrong2()">D. Avoidance</button></h3>
+    </div>
+</div>
+
+<div class="container">
+    <div class="jumbotron Content3C">
+        <h2>3. these methods are expensive in the sense that each ______ calls the detection algorithms untilnthe system proves to be deadlock free.</h2>
+        <h3><button class="btn btn-info" id="btn-changeGreen3" onclick="Correct3()">A. Function</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeRed3" onclick="Wrong3()">B. Literation</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeRed03" onclick="Wrong3()">C. System</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeRed003" onclick="Wrong3()">D. Memory</button></h3>
+    </div>
+</div>
+
+<div class="container">
+    <div class="jumbotron Content3C">
+        <h2>4. prevent deadlock by resource scheduling so as to negate at least one of the four condition.</h2>
+        <h3><button class="btn btn-info" id="btn-changeRed4" onclick="Wrong4()">A. Detection</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeGreen4" onclick="Correct4()">B. Avoidance</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeRed04" onclick="Wrong4()">C. Prevention</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeRed004" onclick="Wrong4()">D. Recovery</button></h3>
+    </div>
+</div>
+
+<div class="container">
+    <div class="jumbotron Content3C">
+        <h2>5. Person who pioneering work showed that since all four of the conditions are necessary for deadlock.</h2>
+        <h3><button class="btn btn-info" id="btn-changeRed5" onclick="Wrong5()">A. Habender</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeGreen5" onclick="Correct5()">B. Hapender</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeRed05" onclick="Wrong5()">C. Havender</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeRed005" onclick="Wrong5()">D. Havenber</button></h3>
+    </div>
+</div>
+
+<div class="container">
+    <div class="jumbotron Content3C">
+        <h2>6. Thread switching is not much more expensive than a__________ call.</h2>
+        <h3><button class="btn btn-info" id="btn-changeRed6" onclick="Wrong6()">A. System</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeGreen6" onclick="Correct6()">B. Thread</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeRed06" onclick="Wrong6()">C.Process</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeRed006" onclick="Wrong6()">D. Structure</button></h3>
+    </div>
+</div>
+
+<div class="container">
+    <div class="jumbotron Content3C">
+        <h2>7.  All threads can access every____________ in the task.</h2>
+        <h3><button class="btn btn-info" id="btn-changeRed7" onclick="Wrong7()">A. Storage</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeGreen7" onclick="Wrong7()">B. File</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeRed07" onclick="Wrong7()">C. Memory</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeRed007" onclick="Correct7()">D. Address</button></h3>
+    </div>
+</div>
+
+<div class="container">
+    <div class="jumbotron Content3C">
+        <h2>8. Threads can share common ______________ they do not need to use interprocess communication.</h2>
+        <h3><button class="btn btn-info" id="btn-changeRed8" onclick="Correct8()">A. Data</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeGreen8" onclick="Wrong8()">B. File</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeRed08" onclick="Wrong8()">C. Program</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeRed008" onclick="Wrong8()">D. Process</button></h3>
+    </div>
+</div>
+
+<div class="container">
+    <div class="jumbotron Content3C">
+        <h2>9. The kernel-level threads are ___________________ and inefficient.</h2>
+        <h3><button class="btn btn-info" id="btn-changeRed9" onclick="Correct9()">A. Slow</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeGreen9" onclick="Wrong9()">B. Fast</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeRed09" onclick="Wrong9()">C. Easy</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeRed009" onclick="Wrong9()">D. No Answer</button></h3>
+    </div>
+</div>
+
+<div class="container">
+    <div class="jumbotron Content3C">
+        <h2>10. if one thread is blocked, another thread can _________________.</h2>
+        <h3><button class="btn btn-info" id="btn-changeRed10" onclick="Correct10()">A. Run</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeGreen10" onclick="wrong10()">B. Edit</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeRed010" onclick="Wrong10()">C. Program</button></h3>
+        <h3><button class="btn btn-info" id="btn-changeRed0010" onclick="Wrong10()">D. Process</button></h3>
+    </div>
+</div>
 
     
 </body>
