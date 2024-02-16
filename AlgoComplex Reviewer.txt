@@ -1,0 +1,37 @@
+ALGCMPLX
+1. ____ gives a high-level description of an algorithm without the ambiguity associated with plain text but also without the need to know the syntax of a particular programming language.
+a. Output
+b. Algorithm
+c. Unambiguous
+d. Pseudocode
+
+2. Algorithms must terminate after a finite number of steps.
+a. Input
+b. Finiteness
+c. Feasibility
+d. Independent
+
+3. ____ is the total memory space required by the program for its execution.
+a. Space Complexity
+b. Average Time Complexity
+c. Best Time Complexity
+d. Time Complexity
+
+4. An algorithm should have 0 or more well-defined inputs.
+a. Input
+b. Unambiguous
+c. Output
+d. Independent
+
+5. ____ is defined as the number of times a particular instruction set is executed rather than the total time taken. 
+a. Average Time Complexity
+b. Worst Time Complexity
+c. Time Complexity
+d. Space Complexity
+
+
+1. D. Pseudocode
+2. B. Finiteness 
+3. A. Space Complexity
+4. A. Input
+5. C. Time Complexity

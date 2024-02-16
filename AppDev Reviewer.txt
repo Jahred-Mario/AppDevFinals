@@ -1,0 +1,81 @@
+Appdev
+
+1.  Which programming language is commonly used for Android app development?
+   a) Java  
+   b) Python  
+   c) C#  
+   d) Swift  
+   
+ Answer: a) Java
+
+2.  What is the purpose of version control systems like Git in application development?
+   a) Managing project budgets  
+   b) Tracking changes to source code  
+   c) Creating user interfaces  
+   d) Testing software compatibility
+   
+Answer:b) Tracking changes to source code
+
+3.  Which of the following is NOT a mobile app distribution platform?
+   a) Google Play Store  
+   b) AppFog  
+   c) Apple App Store  
+   d) Amazon Appstore
+   
+Answer: b) AppFog
+
+4. Question: What does API stand for in the context of software development?
+   a) Application Programming Interface  
+   b) Automated Programming Instruction  
+   c) Advanced Program Interaction  
+   d) Algorithmic Program Integration
+   
+ Answer:a) Application Programming Interface
+
+5.  What is the purpose of unit testing in software development?
+   a) Testing the entire application  
+   b) Testing the user interface  
+   c) Testing individual components or functions  
+   d) Testing server performance
+   
+Answer: c) Testing individual components or functions
+
+6.  Which of the following is NOT a commonly used database management system in application development?
+   a) MySQL  
+   b) SQLite  
+   c) MongoDB  
+   d) PHP
+   
+ Answer:d) PHP
+
+7.  What is the term used for the process of converting source code into machine code?
+   a) Compilation  
+   b) Interpretation  
+   c) Debugging  
+   d) Documentation
+   
+ Answer:a) Compilation
+
+8. Which of the following is a popular framework for building web applications using JavaScript?
+   a) Django  
+   b) Ruby on Rails  
+   c) Laravel  
+   d) React
+   
+ Answer: d) React
+
+9.  Which software development methodology emphasizes continuous integration and delivery?
+   a) Waterfall  
+   b) Agile  
+   c) Scrum  
+   d) DevOps
+   
+Answer:d) DevOps
+
+10. What is the purpose of MVC architecture in software development?
+    a) Managing version control  
+    b) Organizing code into separate layers  
+    c) Creating user interfaces  
+    d) Testing application compatibility
+   
+Answer: b) Organizing code into separate layers

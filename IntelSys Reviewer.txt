@@ -1,0 +1,81 @@
+Intelligent Systems
+
+1.  What is the primary goal of intelligent systems?
+   a) To mimic human behavior exactly  
+   b) To automate tasks using AI techniques  
+   c) To replace human decision-making entirely  
+   d) To reduce computational complexity
+   
+Answer:b) To automate tasks using AI techniques
+
+2. Which branch of AI focuses on developing algorithms that enable computers to learn from and make predictions or decisions based on data?
+   a) Natural Language Processing  
+   b) Machine Learning  
+   c) Robotics  
+   d) Expert Systems
+   
+Answer:b) Machine Learning
+
+3. What is the term used to describe the ability of an AI system to understand, interpret, and generate human-like language?
+   a) Sentiment Analysis  
+   b) Speech Recognition  
+   c) Natural Language Processing  
+   d) Machine Translation
+   
+Answer: c) Natural Language Processing
+
+4. Which of the following is NOT a type of machine learning algorithm?
+   a) Supervised Learning  
+   b) Unsupervised Learning  
+   c) Predefined Learning  
+   d) Reinforcement Learning
+   
+Answer:c) Predefined Learning
+
+5. What is the purpose of a neural network in artificial intelligence?
+   a) To simulate the human brain's structure and function  
+   b) To analyze natural language text  
+   c) To navigate physical environments  
+   d) To generate random numbers
+   
+Answer: a) To simulate the human brain's structure and function
+
+6. Which of the following is NOT a characteristic of expert systems?
+   a) They rely on a knowledge base  
+   b) They can learn from data  
+   c) They emulate human expertise in a specific domain  
+   d) They use inference engines to draw conclusions
+   
+Answer: b) They can learn from data
+
+7.  What is the term used to describe the ability of AI systems to perceive and understand their environment?
+   a) Machine Perception  
+   b) Expert Perception  
+   c) Cognitive Comprehension  
+   d) Sensory Analysis
+   
+Answer: a) Machine Perception
+
+8.  Which type of AI system is capable of reasoning and making decisions based on predefined rules and logical reasoning?
+   a) Machine Learning  
+   b) Expert Systems  
+   c) Natural Language Processing  
+   d) Robotics
+   
+Answer: b) Expert Systems
+
+9. What is reinforcement learning in the context of AI?
+   a) Learning from labeled data  
+   b) Learning from a teacher or supervisor  
+   c) Learning from rewards and punishments  
+   d) Learning from pre-existing knowledge
+   
+Answer: c) Learning from rewards and punishments
+
+10.  Which of the following is an example of a real-world application of intelligent systems?
+    a) Online shopping recommendation systems  
+    b) Spreadsheet software  
+    c) Email client  
+    d) Web browser
+    
+Answer: a) Online shopping recommendation systems

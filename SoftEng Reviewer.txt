@@ -1,0 +1,81 @@
+Software Engineering
+
+1.  What is software engineering?
+   a) The process of building physical hardware components  
+   b) The systematic approach to the development, operation, and maintenance of software  
+   c) The study of computer science theory  
+   d) The process of designing user interfaces
+   
+Answer: b) The systematic approach to the development, operation, and maintenance of software
+
+2. What is the purpose of requirements engineering in software development?
+   a) To design the user interface  
+   b) To gather and analyze user needs and system requirements  
+   c) To write code for the application  
+   d) To test the software for bugs
+   
+ Answer b) To gather and analyze user needs and system requirements
+
+3.  Which software development methodology emphasizes incremental, iterative development?
+   a) Waterfall  
+   b) Agile  
+   c) Spiral  
+   d) RAD (Rapid Application Development)
+   
+Answer: b) Agile
+
+4.  What is the term used to describe the process of finding and fixing defects or problems in software?
+   a) Debugging  
+   b) Documentation  
+   c) Deployment  
+   d) Design
+   
+Answer: a) Debugging
+
+5.  Which phase of the software development life cycle typically involves creating a detailed plan for how the software will be built?
+   a) Analysis  
+   b) Design  
+   c) Implementation  
+   d) Planning
+   
+Answer: d) Planning
+
+6. What is the purpose of software testing in the software development process?
+   a) To write code for the application  
+   b) To gather user requirements  
+   c) To identify defects and ensure quality  
+   d) To create user documentation
+   
+Answer: c) To identify defects and ensure quality
+
+7. Which of the following is NOT a common software development model?
+   a) Waterfall  
+   b) Agile  
+   c) Spiral  
+   d) Parallel
+   
+ Answer: d) Parallel
+
+8. What is the term used to describe the process of converting a software design into code?
+   a) Requirements engineering  
+   b) Analysis  
+   c) Implementation  
+   d) Testing
+   
+   Answer:c) Implementation
+
+9. Which of the following is NOT a software development tool?
+   a) Version control system  
+   b) Integrated Development Environment (IDE)  
+   c) Compiler  
+   d) Spreadsheet
+   
+Answer: d) Spreadsheet
+
+10.  Which of the following is a characteristic of the Waterfall model?
+    a) Iterative development  
+    b) Requirements can change throughout the project  
+    c) Phases are completed sequentially  
+    d) Emphasizes customer collaboration
+    
+ Answer: c) Phases are completed sequentially

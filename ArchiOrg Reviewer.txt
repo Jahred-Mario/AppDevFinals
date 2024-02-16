@@ -1,0 +1,81 @@
+architecture and organization 
+
+1.  What does CPU stand for in computer architecture?
+   a) Central Processing Unit  
+   b) Computer Processing Unit  
+   c) Control Processing Unit  
+   d) Centralized Processing Unit
+   
+ Answer: a) Central Processing Unit
+
+2.  Which of the following is NOT a type of memory commonly found in computer systems?
+   a) RAM  
+   b) ROM  
+   c) CPU  
+   d) Cache
+   
+ Answer: c) CPU
+
+3.  What is the primary function of the cache memory in a computer system?
+   a) Store frequently accessed data for quick retrieval  
+   b) Execute program instructions  
+   c) Store the operating system  
+   d) Manage peripheral devices
+   
+ Answer: a) Store frequently accessed data for quick retrieval
+
+4. Which component of a computer system is responsible for managing data transfer between the CPU, memory, and other peripheral devices?
+   a) ALU (Arithmetic Logic Unit)  
+   b) Control Unit  
+   c) Cache  
+   d) RAM (Random Access Memory)
+   
+  Answer:b) Control Unit
+
+5. What is the purpose of the motherboard in a computer system?
+   a) Manage power distribution  
+   b) Provide storage for data  
+   c) Serve as a platform for connecting all components  
+   d) Execute program instructions
+   
+Answer:c) Serve as a platform for connecting all components
+
+6. Which of the following is NOT a common input device used in computer systems?
+   a) Keyboard  
+   b) Monitor  
+   c) Mouse  
+   d) Touchpad
+   
+ Answer:b) Monitor
+
+7.  What does RAID stand for in the context of computer storage?
+   a) Redundant Array of Independent Disks  
+   b) Random Access Integrated Drive  
+   c) Rapid Access Information Device  
+   d) Readily Available Indexed Data
+   
+Answer: a) Redundant Array of Independent Disks
+
+8. Which of the following is NOT a characteristic of a microcontroller?
+   a) Contains a CPU, memory, and I/O ports on a single chip  
+   b) Typically used in embedded systems  
+   c) Often used in high-performance computing  
+   d) Executes pre-defined tasks
+   
+Answer: c) Often used in high-performance computing
+
+9. What is the purpose of the BIOS (Basic Input/Output System) in a computer system?
+   a) Manage network connections  
+   b) Load the operating system into memory during startup  
+   c) Execute user applications  
+   d) Provide storage for user data
+   
+Answer: b) Load the operating system into memory during startup
+
+10. Which of the following is NOT a common bus type used in computer architecture?
+    a) USB (Universal Serial Bus)  
+    b) PCI (Peripheral Component Interconnect)  
+    c) SATA (Serial ATA)  
+    d) TCP/IP (Transmission Control Protocol/Internet Protocol)
+    
+ Answer: d) TCP/IP (Transmission Control Protocol/Internet Protocol)
