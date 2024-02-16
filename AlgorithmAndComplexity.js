@@ -140,35 +140,35 @@ function Correct5() {
 
 function FillBlanks() {
     // Number 6
-    if (document.getElementById("No6").value === "Stuff") {
+    if (document.getElementById("No6").value === "") {
         document.getElementById("No6").style.color = "green";
     } else {
         document.getElementById("No6").style.color = "red";
     }
 
     // Number 7
-    if (document.getElementById("No7").value === "Stuff") {
+    if (document.getElementById("No7").value === "") {
         document.getElementById("No7").style.color = "green";
     } else {
         document.getElementById("No7").style.color = "red";
     }
 
     // Number 8
-    if (document.getElementById("No8").value === "Stuff") {
+    if (document.getElementById("No8").value === "") {
         document.getElementById("No8").style.color = "green";
     } else {
         document.getElementById("No8").style.color = "red";
     }
 
     // Number 9
-    if (document.getElementById("No9").value === "Stuff") {
+    if (document.getElementById("No9").value === "") {
         document.getElementById("No9").style.color = "green";
     } else {
         document.getElementById("No9").style.color = "red";
     }
 
     // Number 10
-    if (document.getElementById("No10").value === "Stuff") {
+    if (document.getElementById("No10").value === "") {
         document.getElementById("No10").style.color = "green";
     } else {
         document.getElementById("No10").style.color = "red";
