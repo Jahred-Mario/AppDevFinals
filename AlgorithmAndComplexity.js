@@ -138,6 +138,148 @@ function Correct5() {
     document.getElementById("btn-changeGreen5").disabled = true;
 }
 
+function Wrong6() {
+    document.getElementById("btn-changeRed6").className = "btn btn-danger";
+    document.getElementById("btn-changeRed06").className = "btn btn-danger";
+    document.getElementById("btn-changeRed006").className = "btn btn-danger";
+
+    document.getElementById("btn-changeGreen6").className = "btn btn-success";
+
+    document.getElementById("btn-changeRed6").disabled = true;
+    document.getElementById("btn-changeRed06").disabled = true;
+    document.getElementById("btn-changeRed006").disabled = true;
+
+    document.getElementById("btn-changeGreen6").disabled = true; 
+}
+
+function Correct6() {
+    document.getElementById("btn-changeRed6").className = "btn btn-danger";
+    document.getElementById("btn-changeRed06").className = "btn btn-danger";
+    document.getElementById("btn-changeRed006").className = "btn btn-danger";
+
+    document.getElementById("btn-changeGreen6").className = "btn btn-success";
+
+    document.getElementById("btn-changeRed6").disabled = true;
+    document.getElementById("btn-changeRed06").disabled = true;
+    document.getElementById("btn-changeRed006").disabled = true;
+
+    document.getElementById("btn-changeGreen6").disabled = true;
+}
+
+function Wrong7() {
+    document.getElementById("btn-changeRed7").className = "btn btn-danger";
+    document.getElementById("btn-changeRed07").className = "btn btn-danger";
+    document.getElementById("btn-changeRed007").className = "btn btn-danger";
+
+    document.getElementById("btn-changeGreen7").className = "btn btn-success";
+
+    document.getElementById("btn-changeRed7").disabled = true;
+    document.getElementById("btn-changeRed07").disabled = true;
+    document.getElementById("btn-changeRed007").disabled = true;
+
+    document.getElementById("btn-changeGreen7").disabled = true; 
+}
+
+function Correct7() {
+    document.getElementById("btn-changeRed7").className = "btn btn-danger";
+    document.getElementById("btn-changeRed07").className = "btn btn-danger";
+    document.getElementById("btn-changeRed007").className = "btn btn-danger";
+
+    document.getElementById("btn-changeGreen7").className = "btn btn-success";
+
+    document.getElementById("btn-changeRed7").disabled = true;
+    document.getElementById("btn-changeRed07").disabled = true;
+    document.getElementById("btn-changeRed007").disabled = true;
+
+    document.getElementById("btn-changeGreen7").disabled = true;
+}
+
+function Wrong8() {
+    document.getElementById("btn-changeRed8").className = "btn btn-danger";
+    document.getElementById("btn-changeRed08").className = "btn btn-danger";
+    document.getElementById("btn-changeRed008").className = "btn btn-danger";
+
+    document.getElementById("btn-changeGreen8").className = "btn btn-success";
+
+    document.getElementById("btn-changeRed8").disabled = true;
+    document.getElementById("btn-changeRed08").disabled = true;
+    document.getElementById("btn-changeRed008").disabled = true;
+
+    document.getElementById("btn-changeGreen8").disabled = true; 
+}
+
+function Correct8() {
+    document.getElementById("btn-changeRed8").className = "btn btn-danger";
+    document.getElementById("btn-changeRed08").className = "btn btn-danger";
+    document.getElementById("btn-changeRed008").className = "btn btn-danger";
+
+    document.getElementById("btn-changeGreen8").className = "btn btn-success";
+
+    document.getElementById("btn-changeRed8").disabled = true;
+    document.getElementById("btn-changeRed08").disabled = true;
+    document.getElementById("btn-changeRed008").disabled = true;
+
+    document.getElementById("btn-changeGreen8").disabled = true;
+}
+
+function Wrong9() {
+    document.getElementById("btn-changeRed9").className = "btn btn-danger";
+    document.getElementById("btn-changeRed09").className = "btn btn-danger";
+    document.getElementById("btn-changeRed009").className = "btn btn-danger";
+
+    document.getElementById("btn-changeGreen9").className = "btn btn-success";
+
+    document.getElementById("btn-changeRed9").disabled = true;
+    document.getElementById("btn-changeRed09").disabled = true;
+    document.getElementById("btn-changeRed009").disabled = true;
+
+    document.getElementById("btn-changeGreen9").disabled = true; 
+}
+
+function Correct9() {
+    document.getElementById("btn-changeRed9").className = "btn btn-danger";
+    document.getElementById("btn-changeRed09").className = "btn btn-danger";
+    document.getElementById("btn-changeRed009").className = "btn btn-danger";
+
+    document.getElementById("btn-changeGreen9").className = "btn btn-success";
+
+    document.getElementById("btn-changeRed9").disabled = true;
+    document.getElementById("btn-changeRed09").disabled = true;
+    document.getElementById("btn-changeRed009").disabled = true;
+
+    document.getElementById("btn-changeGreen9").disabled = true;
+}
+
+function Wrong10() {
+    document.getElementById("btn-changeRed10").className = "btn btn-danger";
+    document.getElementById("btn-changeRed010").className = "btn btn-danger";
+    document.getElementById("btn-changeRed0010").className = "btn btn-danger";
+
+    document.getElementById("btn-changeGreen10").className = "btn btn-success";
+
+    document.getElementById("btn-changeRed10").disabled = true;
+    document.getElementById("btn-changeRed010").disabled = true;
+    document.getElementById("btn-changeRed0010").disabled = true;
+
+    document.getElementById("btn-changeGreen10").disabled = true; 
+}
+
+function Correct10() {
+    document.getElementById("btn-changeRed10").className = "btn btn-danger";
+    document.getElementById("btn-changeRed010").className = "btn btn-danger";
+    document.getElementById("btn-changeRed0010").className = "btn btn-danger";
+
+    document.getElementById("btn-changeGreen10").className = "btn btn-success";
+
+    document.getElementById("btn-changeRed10").disabled = true;
+    document.getElementById("btn-changeRed010").disabled = true;
+    document.getElementById("btn-changeRed0010").disabled = true;
+
+    document.getElementById("btn-changeGreen10").disabled = true;
+}
+
+
+/* Pina-cancel yung fill in the blanks eh hahaha.
 function FillBlanks() {
     // Number 6
     if (document.getElementById("No6").value === "") {
@@ -175,3 +317,4 @@ function FillBlanks() {
     }
         
 }
+*/

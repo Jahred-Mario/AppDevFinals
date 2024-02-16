@@ -155,7 +155,7 @@ function Wrong6() {
 function Correct6() {
     document.getElementById("btn-changeRed6").className = "btn btn-danger";
     document.getElementById("btn-changeRed06").className = "btn btn-danger";
-    document.getElementById("btn-changeRed06").className = "btn btn-danger";
+    document.getElementById("btn-changeRed006").className = "btn btn-danger";
 
     document.getElementById("btn-changeGreen6").className = "btn btn-success";
 
@@ -183,7 +183,7 @@ function Wrong7() {
 function Correct7() {
     document.getElementById("btn-changeRed7").className = "btn btn-danger";
     document.getElementById("btn-changeRed07").className = "btn btn-danger";
-    document.getElementById("btn-changeRed07").className = "btn btn-danger";
+    document.getElementById("btn-changeRed007").className = "btn btn-danger";
 
     document.getElementById("btn-changeGreen7").className = "btn btn-success";
 

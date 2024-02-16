@@ -35,3 +35,41 @@ d. Space Complexity
 3. A. Space Complexity
 4. A. Input
 5. C. Time Complexity
+
+
+
+
+1. Which of the following is not the same standard algorithm that follow Divide and Conquer algorithm?
+a. Quick Sort
+b. Bubble Sort
+c. Merge Sort
+d. Closest Pair of Points
+Answer: b
+
+2. What is the Time Complexity: Worst case of Binary Search?
+a. O(N log N)
+b. O(N²)
+c. O(1)
+d. O(log N)
+Answer: d
+
+3. Which of the following is the advantages of Divided and Conquer?
+a. Complexity 
+b. Overhead
+c. Round off Control
+d. Memory Limitation
+Answer: c
+
+4. One of the signs of Dynamic Programming Suitability
+a. Overlapping Subproblems
+b. Bottom-up Approach
+c. Difficulty in Parallelization
+d. Top-down Approach
+Answer: a
+
+5. Which of the following is the disadvantages of Divided and Conquer?
+a. Suboptimal Solution
+b. Parallelism
+c. Algorithm Efficiency
+d. Memory Access
+Answer: a

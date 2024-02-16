@@ -155,7 +155,7 @@ function Wrong6() {
 function Correct6() {
     document.getElementById("btn-changeRed6").className = "btn btn-danger";
     document.getElementById("btn-changeRed06").className = "btn btn-danger";
-    document.getElementById("btn-changeRed06").className = "btn btn-danger";
+    document.getElementById("btn-changeRed006").className = "btn btn-danger";
 
     document.getElementById("btn-changeGreen6").className = "btn btn-success";
 
@@ -183,7 +183,7 @@ function Wrong7() {
 function Correct7() {
     document.getElementById("btn-changeRed7").className = "btn btn-danger";
     document.getElementById("btn-changeRed07").className = "btn btn-danger";
-    document.getElementById("btn-changeRed07").className = "btn btn-danger";
+    document.getElementById("btn-changeRed007").className = "btn btn-danger";
 
     document.getElementById("btn-changeGreen7").className = "btn btn-success";
 
@@ -211,7 +211,7 @@ function Wrong8() {
 function Correct8() {
     document.getElementById("btn-changeRed8").className = "btn btn-danger";
     document.getElementById("btn-changeRed08").className = "btn btn-danger";
-    document.getElementById("btn-changeRed08").className = "btn btn-danger";
+    document.getElementById("btn-changeRed008").className = "btn btn-danger";
 
     document.getElementById("btn-changeGreen8").className = "btn btn-success";
 
@@ -267,7 +267,7 @@ function Wrong10() {
 function Correct10() {
     document.getElementById("btn-changeRed10").className = "btn btn-danger";
     document.getElementById("btn-changeRed010").className = "btn btn-danger";
-    document.getElementById("btn-changeRed010").className = "btn btn-danger";
+    document.getElementById("btn-changeRed0010").className = "btn btn-danger";
 
     document.getElementById("btn-changeGreen10").className = "btn btn-success";
 
