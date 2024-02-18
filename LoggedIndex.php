@@ -20,18 +20,41 @@ ob_start();
 include("Connect.php");
 
 // Cookies (Meaning: If you're already signed in, naglo-load pa rin yung data mo)
-if (isset($_COOKIE["UserName"])) {
-    $view = "SELECT Username, Password FROM userlogin WHERE Username='". $_COOKIE["Username"] . "' ";
+if (isset($_POST["UserName"])) {
+    $view = "SELECT Username, Password FROM userlogin WHERE Username = ". $_COOKIE["Username"] . " ";
     $viewGO = mysqli_query($con, $view) or die(mysqli_error($con));
 
     if (mysqli_num_rows($viewGO) > 0) {
-        echo '';
+        echo '
+            <div class="">
+                <div class="jumbotron text-center Top3C">
+                    <h1>Sample Title</h1>
+                    <h2>Your Reviewer Sample</h2>
+            
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h2>Welcome, '. $_COOKIE["Username"] .'</h2>
+                        </div>
+            
+                        <div class="col-sm-4">
+                            <a href="Login Form.php"><button class="btn btn-info">Sign Up / Log In</button></a>
+                        </div>
+            
+                        <div class="col-sm-4">
+                            <h2>Logo ata here?</h2>
+                        </div>
+                    </div>
+                </div>
+            </div> ';
     } else {
-        // header("");
+        echo '
+        
+        ';
     }
 }
 ?>
 
+<!--
 <div class="">
     <div class="jumbotron text-center Top3C">
         <h1>Sample Title</h1>
@@ -39,7 +62,7 @@ if (isset($_COOKIE["UserName"])) {
 
         <div class="row">
             <div class="col-sm-4">
-                <h2>Welcome User!</h2>
+                <h2>Welcome, User!</h2>
             </div>
 
             <div class="col-sm-4">
@@ -51,7 +74,8 @@ if (isset($_COOKIE["UserName"])) {
             </div>
         </div>
     </div>
-</div> 
+</div>
+-->
 
 <div class="container">
     <div class="jumbotron text-center Content3C">
@@ -60,7 +84,7 @@ if (isset($_COOKIE["UserName"])) {
         <a href="Credits.html"><button class="btn btn-info bigBtns">Credits</button></a>
     </div>
 </div>
-
+    
 </body>
 </html>
 

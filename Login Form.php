@@ -21,7 +21,7 @@ ob_start();
         <h1>Sample Title</h1>
         <h2>Your Reviewer Sample</h2>
 
-        <a href="index.html"><button class="btn btn-info">Back to Menu</button></a>
+        <a href="index.php"><button class="btn btn-info">Back to Menu</button></a>
     </div>
 </div>
 
@@ -101,6 +101,6 @@ if (isset($_POST["LogSub"])) {
     if ($count == 0)
         echo "<h1>$a doesn't exist</h1>";
     else 
-        header("Location: Index.html");
+        header("Location: LoggedIndex.php");
 }
 ?>
