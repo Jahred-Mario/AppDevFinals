@@ -95,3 +95,7 @@
 .Correct10 {
     color: Green;
 }
+
+.btn-bigger {
+    font-size: 20px;
+}

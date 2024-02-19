@@ -93,6 +93,7 @@ if (isset($_POST["LogSub"])) {
     $b = $_POST["Password"];
 
     include("Connect.php");
+    setcookie("Username", $_POST["Username"], time() + 3600);
 
     $verif = "SELECT Username FROM userlogin WHERE Username = '$a'"; // I-verify kung nasa Database ba si Username
     $res = mysqli_query($con, $verif); // Result ng SQL query (Connect sa database, then verify)

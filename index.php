@@ -43,7 +43,7 @@ if (isset($_COOKIE["UserName"])) {
             </div>
 
             <div class="col-sm-4">
-                <a href="Login Form.php"><button class="btn btn-info">Sign Up / Log In</button></a>
+                <a href="Login Form.php"><button class="btn btn-info btn-bigger">Sign Up / Log In</button></a>
             </div>
 
             <div class="col-sm-4">

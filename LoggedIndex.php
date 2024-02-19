@@ -19,9 +19,16 @@ ob_start();
 <?php
 include("Connect.php");
 
+$sql = "SELECT * FROM userlogin";
+$result = mysqli_query($con, $sql);
+
+while ($Recs = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+    $a = $Recs["Username"];
+}
+
 // Cookies (Meaning: If you're already signed in, naglo-load pa rin yung data mo)
-if (isset($_POST["UserName"])) {
-    $view = "SELECT Username, Password FROM userlogin WHERE Username = ". $_COOKIE["Username"] . " ";
+if (isset($_COOKIE["Username"])) {
+    $view = "SELECT Username, Password FROM userlogin WHERE Username = '". $_COOKIE["Username"] ."' ";
     $viewGO = mysqli_query($con, $view) or die(mysqli_error($con));
 
     if (mysqli_num_rows($viewGO) > 0) {
@@ -37,7 +44,7 @@ if (isset($_POST["UserName"])) {
                         </div>
             
                         <div class="col-sm-4">
-                            <a href="Login Form.php"><button class="btn btn-info">Sign Up / Log In</button></a>
+                            <a href="index.php"><button class="btn btn-info">Sign Out</button></a>
                         </div>
             
                         <div class="col-sm-4">
@@ -48,33 +55,35 @@ if (isset($_POST["UserName"])) {
             </div> ';
     } else {
         echo '
-        
+            <div class="">
+                <div class="jumbotron text-center Top3C">
+                    <h1>Sample Title</h1>
+                    <h2>Your Reviewer Sample</h2>
+            
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h2>Welcome, User!</h2>
+                        </div>
+            
+                        <div class="col-sm-4">
+                            <a href="Login Form.php"><button class="btn btn-info">Sign Up / Log In</button></a>
+                        </div>
+            
+                        <div class="col-sm-4">
+                            <h2>Logo ata here?</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
         ';
     }
+} else {
+    echo "GINAGAWA MO?";
 }
 ?>
 
 <!--
-<div class="">
-    <div class="jumbotron text-center Top3C">
-        <h1>Sample Title</h1>
-        <h2>Your Reviewer Sample</h2>
 
-        <div class="row">
-            <div class="col-sm-4">
-                <h2>Welcome, User!</h2>
-            </div>
-
-            <div class="col-sm-4">
-                <a href="Login Form.php"><button class="btn btn-info">Sign Up / Log In</button></a>
-            </div>
-
-            <div class="col-sm-4">
-                <h2>Logo ata here?</h2>
-            </div>
-        </div>
-    </div>
-</div>
 -->
 
 <div class="container">
