@@ -44,7 +44,7 @@ if (isset($_COOKIE["Username"])) {
                         </div>
             
                         <div class="col-sm-4">
-                            <a href="index.php"><button class="btn btn-info">Sign Out</button></a>
+                            <a href="index.php"><button class="btn btn-info btn-bigger">Sign Out</button></a>
                         </div>
             
                         <div class="col-sm-4">
@@ -66,7 +66,7 @@ if (isset($_COOKIE["Username"])) {
                         </div>
             
                         <div class="col-sm-4">
-                            <a href="Login Form.php"><button class="btn btn-info">Sign Up / Log In</button></a>
+                            <a href="Login Form.php"><button class="btn btn-info btn-bigger">Sign Up / Log In</button></a>
                         </div>
             
                         <div class="col-sm-4">
