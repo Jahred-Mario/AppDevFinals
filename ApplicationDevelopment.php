@@ -75,7 +75,7 @@ if (isset($_COOKIE["Username"])) {
     if (isset($_POST["Correct1"])) {
         include("Connect.php");
     
-        $sql = "UPDATE userlogin SET AlgoCompScore = AlgoCompScore + 1 WHERE Username = '" . $_COOKIE["Username"] . "' ";
+        $sql = "UPDATE userlogin SET AppDevScore = AAppDevScore + 1 WHERE Username = '" . $_COOKIE["Username"] . "' ";
     
         if (mysqli_query($con, $sql)) {
             echo '
@@ -116,7 +116,7 @@ if (isset($_COOKIE["Username"])) {
     if (isset($_POST["Correct2"])) {
         include("Connect.php");
     
-        $sql = "UPDATE userlogin SET AlgoCompScore = AlgoCompScore + 1 WHERE Username = '" . $_COOKIE["Username"] . "' ";
+        $sql = "UPDATE userlogin SET AppDevScore = AppDevScore + 1 WHERE Username = '" . $_COOKIE["Username"] . "' ";
     
         if (mysqli_query($con, $sql)) {
             echo '
@@ -157,7 +157,7 @@ if (isset($_COOKIE["Username"])) {
     if (isset($_POST["Correct3"])) {
         include("Connect.php");
     
-        $sql = "UPDATE userlogin SET AlgoCompScore = AlgoCompScore + 1 WHERE Username = '" . $_COOKIE["Username"] . "' ";
+        $sql = "UPDATE userlogin SET AppDevScore = AppDevScore + 1 WHERE Username = '" . $_COOKIE["Username"] . "' ";
     
         if (mysqli_query($con, $sql)) {
             echo '
@@ -178,11 +178,11 @@ if (isset($_COOKIE["Username"])) {
         echo '
             <div class="container" id="Q4">
                 <div class="jumbotron Content3C">
-                    <h2>4. An algorithm should have 0 or more well-defined inputs.</h2>
-                    <h3><button name="Correct4" onclick="Q3" class="btn btn-info">a.) Input</button></h3>
-                    <h3><button name="Wrong4" onclick="Q3" class="btn btn-info">b.) Unambiguous</button></h3>
-                    <h3><button name="Wrong4" onclick="Q3" class="btn btn-info">c.) Output</button></h3>
-                    <h3><button name="Wrong4" onclick="Q3" class="btn btn-info">d.) Independent</button></h3>
+                    <h2>4. What does API stand for in the context of software development?</h2>
+                    <h3><button name="Correct4" onclick="Q3" class="btn btn-info">a.) Application Programming Interface</button></h3>
+                    <h3><button name="Wrong4" onclick="Q3" class="btn btn-info">b.) Automated Programming Instruction</button></h3>
+                    <h3><button name="Wrong4" onclick="Q3" class="btn btn-info">c.) Advanced Program Interaction</button></h3>
+                    <h3><button name="Wrong4" onclick="Q3" class="btn btn-info">d.) Algorithmic Program Integration</button></h3>
                 </div>
             </div>
         ';
@@ -198,17 +198,17 @@ if (isset($_COOKIE["Username"])) {
     if (isset($_POST["Correct4"])) {
         include("Connect.php");
     
-        $sql = "UPDATE userlogin SET AlgoCompScore = AlgoCompScore + 1 WHERE Username = '" . $_COOKIE["Username"] . "' ";
+        $sql = "UPDATE userlogin SET AppDevScore = AppDevScore + 1 WHERE Username = '" . $_COOKIE["Username"] . "' ";
     
         if (mysqli_query($con, $sql)) {
             echo '
                 <div class="container" id="Q5">
                     <div class="jumbotron Content3C">
-                        <h2>5. ____ is defined as the number of times a particular instruction set is executed rather than the total time taken.</h2>
-                        <h3><button name="Wrong5" onclick="Q4" class="btn btn-info">a.) Average Time Complexity</button></h3>
-                        <h3><button name="Wrong5" onclick="Q4" class="btn btn-info">b.) Worst Time Complexity</button></h3>
-                        <h3><button name="Correct5" onclick="Q4" class="btn btn-info">c.) Time Complexity</button></h3>
-                        <h3><button name="Wrong5" onclick="Q4" class="btn btn-info">d.) Space Complexity</button></h3>
+                        <h2>5. What is the purpose of unit testing in software development?</h2>
+                        <h3><button name="Wrong5" onclick="Q4" class="btn btn-info">a.) Testing the entire application</button></h3>
+                        <h3><button name="Wrong5" onclick="Q4" class="btn btn-info">b.) Testing the user interface</button></h3>
+                        <h3><button name="Wrong5" onclick="Q4" class="btn btn-info">c.) Testing individual components or functions</button></h3>
+                        <h3><button name="Correct5" onclick="Q4" class="btn btn-info">d.) Testing server performance</button></h3>
                     </div>
                 </div>
             ';
@@ -219,11 +219,11 @@ if (isset($_COOKIE["Username"])) {
         echo '
             <div class="container" id="Q5">
                 <div class="jumbotron Content3C">
-                    <h2>5. ____ is defined as the number of times a particular instruction set is executed rather than the total time taken.</h2>
-                    <h3><button name="Wrong5" onclick="Q4" class="btn btn-info">a.) Average Time Complexity</button></h3>
-                    <h3><button name="Wrong5" onclick="Q4" class="btn btn-info">b.) Worst Time Complexity</button></h3>
-                    <h3><button name="Correct5" onclick="Q4" class="btn btn-info">c.) Time Complexity</button></h3>
-                    <h3><button name="Wrong5" onclick="Q4" class="btn btn-info">d.) Space Complexity</button></h3>
+                    <h2>5. What is the purpose of unit testing in software development?</h2>
+                    <h3><button name="Wrong5" onclick="Q4" class="btn btn-info">a.) Testing the entire application</button></h3>
+                    <h3><button name="Wrong5" onclick="Q4" class="btn btn-info">b.) Testing the user interface</button></h3>
+                    <h3><button name="Wrong5" onclick="Q4" class="btn btn-info">c.) Testing individual components or functions</button></h3>
+                    <h3><button name="Correct5" onclick="Q4" class="btn btn-info">d.) Testing server performance</button></h3>
                 </div>
             </div>
         ';
@@ -239,17 +239,17 @@ if (isset($_COOKIE["Username"])) {
     if (isset($_POST["Correct5"])) {
         include("Connect.php");
     
-        $sql = "UPDATE userlogin SET AlgoCompScore = AlgoCompScore + 1 WHERE Username = '" . $_COOKIE["Username"] . "' ";
+        $sql = "UPDATE userlogin SET AppDevScore = AppDevScore + 1 WHERE Username = '" . $_COOKIE["Username"] . "' ";
     
         if (mysqli_query($con, $sql)) {
             echo '
                 <div class="container" id="Q6">
                     <div class="jumbotron Content3C">
-                        <h2>6. Which of the following is not the same standard algorithm that follow Divide and Conquer algorithm?</h2>
-                        <h3><button name="Wrong6" onclick="Q5" class="btn btn-info">a.) Quick Sort</button></h3>
-                        <h3><button name="Correct6" onclick="Q5" class="btn btn-info">b.) Bubble Sort</button></h3>
-                        <h3><button name="Wrong6" onclick="Q5" class="btn btn-info">c.) Merge Sort</button></h3>
-                        <h3><button name="Wrong6" onclick="Q5" class="btn btn-info">d.) Closest Pair of Points</button></h3>
+                        <h2>6. Which of the following is NOT a commonly used database management system in application development?</h2>
+                        <h3><button name="Wrong6" onclick="Q5" class="btn btn-info">a.) MySQL </button></h3>
+                        <h3><button name="Wrong6" onclick="Q5" class="btn btn-info">b.) SQLite</button></h3>
+                        <h3><button name="Wrong6" onclick="Q5" class="btn btn-info">c.) MongoDB</button></h3>
+                        <h3><button name="Correct6" onclick="Q5" class="btn btn-info">d.) PHP</button></h3>
                     </div>
                 </div>
             ';
@@ -258,15 +258,15 @@ if (isset($_COOKIE["Username"])) {
         include("Connect.php");
 
         echo '
-            <div class="container" id="Q6">
-                <div class="jumbotron Content3C">
-                    <h2>6. Which of the following is not the same standard algorithm that follow Divide and Conquer algorithm?</h2>
-                    <h3><button name="Wrong6" onclick="Q5" class="btn btn-info">a.) Quick Sort</button></h3>
-                    <h3><button name="Correct6" onclick="Q5" class="btn btn-info">b.) Bubble Sort</button></h3>
-                    <h3><button name="Wrong6" onclick="Q5" class="btn btn-info">c.) Merge Sort</button></h3>
-                    <h3><button name="Wrong6" onclick="Q5" class="btn btn-info">d.) Closest Pair of Points</button></h3>
-                </div>
-            </div>
+        <div class="container" id="Q6">
+        <div class="jumbotron Content3C">
+            <h2>6. Which of the following is NOT a commonly used database management system in application development?</h2>
+            <h3><button name="Wrong6" onclick="Q5" class="btn btn-info">a.) MySQL </button></h3>
+            <h3><button name="Wrong6" onclick="Q5" class="btn btn-info">b.) SQLite</button></h3>
+            <h3><button name="Wrong6" onclick="Q5" class="btn btn-info">c.) MongoDB</button></h3>
+            <h3><button name="Correct6" onclick="Q5" class="btn btn-info">d.) PHP</button></h3>
+        </div>
+    </div>
         ';
     }
 } else {
@@ -280,17 +280,17 @@ if (isset($_COOKIE["Username"])) {
     if (isset($_POST["Correct6"])) {
         include("Connect.php");
     
-        $sql = "UPDATE userlogin SET AlgoCompScore = AlgoCompScore + 1 WHERE Username = '" . $_COOKIE["Username"] . "' ";
+        $sql = "UPDATE userlogin SET AppDevScore = AppDevScore + 1 WHERE Username = '" . $_COOKIE["Username"] . "' ";
     
         if (mysqli_query($con, $sql)) {
             echo '
                 <div class="container" id="Q7">
                     <div class="jumbotron Content3C">
-                        <h2>7. What is the Time Complexity: Worst case of Binary Search?</h2>
-                        <h3><button name="Wrong7" onclick="Q6" class="btn btn-info">a.) O(N log N)</button></h3>
-                        <h3><button name="Wrong7" onclick="Q6" class="btn btn-info">b.) O(N²)</button></h3>
-                        <h3><button name="Wrong7" onclick="Q6" class="btn btn-info">c.) O(1)</button></h3>
-                        <h3><button name="Correct7" onclick="Q6" class="btn btn-info">d.) O(log N)</button></h3>
+                        <h2>7. What is the term used for the process of converting source code into machine code?</h2>
+                        <h3><button name="Correct7" onclick="Q6" class="btn btn-info">a.) Compilation</button></h3>
+                        <h3><button name="Wrong7" onclick="Q6" class="btn btn-info">b.)Interpretation</button></h3>
+                        <h3><button name="Wrong7" onclick="Q6" class="btn btn-info">c.) Debugging </button></h3>
+                        <h3><button name="Wrong7" onclick="Q6" class="btn btn-info">d.) Documentation</button></h3>
                     </div>
                 </div>
             ';
@@ -299,15 +299,15 @@ if (isset($_COOKIE["Username"])) {
         include("Connect.php");
 
         echo '
-            <div class="container" id="Q7">
-                <div class="jumbotron Content3C">
-                    <h2>7. What is the Time Complexity: Worst case of Binary Search?</h2>
-                    <h3><button name="Wrong7" onclick="Q6" class="btn btn-info">a.) O(N log N)</button></h3>
-                    <h3><button name="Wrong7" onclick="Q6" class="btn btn-info">b.) O(N²)</button></h3>
-                    <h3><button name="Wrong7" onclick="Q6" class="btn btn-info">c.) O(1)</button></h3>
-                    <h3><button name="Correct7" onclick="Q6" class="btn btn-info">d.) O(log N)</button></h3>
-                </div>
-            </div>
+        <div class="container" id="Q7">
+        <div class="jumbotron Content3C">
+            <h2>7. What is the term used for the process of converting source code into machine code?</h2>
+            <h3><button name="Correct7" onclick="Q6" class="btn btn-info">a.) Compilation</button></h3>
+            <h3><button name="Wrong7" onclick="Q6" class="btn btn-info">b.)Interpretation</button></h3>
+            <h3><button name="Wrong7" onclick="Q6" class="btn btn-info">c.) Debugging </button></h3>
+            <h3><button name="Wrong7" onclick="Q6" class="btn btn-info">d.) Documentation</button></h3>
+        </div>
+    </div>
         ';
     }
 } else {
@@ -321,19 +321,19 @@ if (isset($_COOKIE["Username"])) {
     if (isset($_POST["Correct7"])) {
         include("Connect.php");
     
-        $sql = "UPDATE userlogin SET AlgoCompScore = AlgoCompScore + 1 WHERE Username = '" . $_COOKIE["Username"] . "' ";
+        $sql = "UPDATE userlogin SET AppDevScore = AppDevScore + 1 WHERE Username = '" . $_COOKIE["Username"] . "' ";
     
         if (mysqli_query($con, $sql)) {
             echo '
-                <div class="container" id="Q8">
-                    <div class="jumbotron Content3C">
-                        <h2>8. Which of the following is the advantages of Divided and Conquer?</h2>
-                        <h3><button name="Wrong8" onclick="Q7" class="btn btn-info">a.) Complexity </button></h3>
-                        <h3><button name="Wrong8" onclick="Q7" class="btn btn-info">b.) Overhead</button></h3>
-                        <h3><button name="Correct8" onclick="Q7" class="btn btn-info">c.) Round off Control</button></h3>
-                        <h3><button name="Wrong8" onclick="Q7" class="btn btn-info">d.) Memory Limitation</button></h3>
-                    </div>
-                </div>
+            <div class="container" id="Q8">
+            <div class="jumbotron Content3C">
+                <h2>8. Which of the following is a popular framework for building web applications using JavaScript?</h2>
+                <h3><button name="Wrong8" onclick="Q7" class="btn btn-info">a.) Django </button></h3>
+                <h3><button name="Wrong8" onclick="Q7" class="btn btn-info">b.)  Ruby on Rails</button></h3>
+                <h3><button name="Wrong8" onclick="Q7" class="btn btn-info">c.) Laravel</button></h3>
+                <h3><button name="Correct8" onclick="Q7" class="btn btn-info">d.) React</button></h3>
+            </div>
+        </div>
             ';
         }
     } else if (isset($_POST["Wrong7"])) {
@@ -342,11 +342,11 @@ if (isset($_COOKIE["Username"])) {
         echo '
             <div class="container" id="Q8">
                 <div class="jumbotron Content3C">
-                    <h2>8. Which of the following is the advantages of Divided and Conquer?</h2>
-                    <h3><button name="Wrong8" onclick="Q7" class="btn btn-info">a.) Complexity </button></h3>
-                    <h3><button name="Wrong8" onclick="Q7" class="btn btn-info">b.) Overhead</button></h3>
-                    <h3><button name="Correct8" onclick="Q7" class="btn btn-info">c.) Round off Control</button></h3>
-                    <h3><button name="Wrong8" onclick="Q7" class="btn btn-info">d.) Memory Limitation</button></h3>
+                    <h2>8. Which of the following is a popular framework for building web applications using JavaScript?</h2>
+                    <h3><button name="Wrong8" onclick="Q7" class="btn btn-info">a.) Django </button></h3>
+                    <h3><button name="Wrong8" onclick="Q7" class="btn btn-info">b.)  Ruby on Rails</button></h3>
+                    <h3><button name="Wrong8" onclick="Q7" class="btn btn-info">c.) Laravel</button></h3>
+                    <h3><button name="Correct8" onclick="Q7" class="btn btn-info">d.) React</button></h3>
                 </div>
             </div>
         ';
@@ -362,17 +362,17 @@ if (isset($_COOKIE["Username"])) {
     if (isset($_POST["Correct8"])) {
         include("Connect.php");
     
-        $sql = "UPDATE userlogin SET AlgoCompScore = AlgoCompScore + 1 WHERE Username = '" . $_COOKIE["Username"] . "' ";
+        $sql = "UPDATE userlogin SET AppDevScore = AppDevScore + 1 WHERE Username = '" . $_COOKIE["Username"] . "' ";
     
         if (mysqli_query($con, $sql)) {
             echo '
                 <div class="container" id="Q9">
                     <div class="jumbotron Content3C">
-                        <h2>9. One of the signs of Dynamic Programming Suitability</h2>
-                        <h3><button name="Correct9" onclick="Q8" class="btn btn-info">a.) Overlapping Subproblems</button></h3>
-                        <h3><button name="Wrong9" onclick="Q8" class="btn btn-info">b.) Bottom-up Approach</button></h3>
-                        <h3><button name="Wrong9" onclick="Q8" class="btn btn-info">c.) Difficulty in Parallelization</button></h3>
-                        <h3><button name="Wrong9" onclick="Q8" class="btn btn-info">d.) Top-down Approach</button></h3>
+                        <h2>9. Which software development methodology emphasizes continuous integration and delivery?</h2>
+                        <h3><button name="Correct9" onclick="Q8" class="btn btn-info">a.) Waterfall</button></h3>
+                        <h3><button name="Wrong9" onclick="Q8" class="btn btn-info">b.) Agile</button></h3>
+                        <h3><button name="Wrong9" onclick="Q8" class="btn btn-info">c.) Scrum</button></h3>
+                        <h3><button name="Wrong9" onclick="Q8" class="btn btn-info">d.) DevOps</button></h3>
                     </div>
                 </div>
             ';
@@ -381,15 +381,15 @@ if (isset($_COOKIE["Username"])) {
         include("Connect.php");
 
         echo '
-            <div class="container" id="Q9">
-                <div class="jumbotron Content3C">
-                    <h2>9. One of the signs of Dynamic Programming Suitability</h2>
-                    <h3><button name="Correct9" onclick="Q8" class="btn btn-info">a.) Overlapping Subproblems</button></h3>
-                    <h3><button name="Wrong9" onclick="Q8" class="btn btn-info">b.) Bottom-up Approach</button></h3>
-                    <h3><button name="Wrong9" onclick="Q8" class="btn btn-info">c.) Difficulty in Parallelization</button></h3>
-                    <h3><button name="Wrong9" onclick="Q8" class="btn btn-info">d.) Top-down Approach</button></h3>
-                </div>
-            </div>
+        <div class="container" id="Q9">
+        <div class="jumbotron Content3C">
+            <h2>9. Which software development methodology emphasizes continuous integration and delivery?</h2>
+            <h3><button name="Correct9" onclick="Q8" class="btn btn-info">a.) Waterfall</button></h3>
+            <h3><button name="Wrong9" onclick="Q8" class="btn btn-info">b.) Agile</button></h3>
+            <h3><button name="Wrong9" onclick="Q8" class="btn btn-info">c.) Scrum</button></h3>
+            <h3><button name="Wrong9" onclick="Q8" class="btn btn-info">d.) DevOps</button></h3>
+        </div>
+    </div>
         ';
     }
 } else {
@@ -403,17 +403,17 @@ if (isset($_COOKIE["Username"])) {
     if (isset($_POST["Correct9"])) {
         include("Connect.php");
 
-        $sql = "UPDATE userlogin SET AlgoCompScore = AlgoCompScore + 1 WHERE Username = '" . $_COOKIE["Username"] . "' ";
+        $sql = "UPDATE userlogin SET AppDevScore = AppDevScore + 1 WHERE Username = '" . $_COOKIE["Username"] . "' ";
 
         if (mysqli_query($con, $sql)) {
             echo '
                 <div class="container" id="Q10">
                     <div class="jumbotron Content3C">
-                        <h2>10. Which of the following is the disadvantages of Divided and Conquer?</h2>
-                        <h3><button name="Correct10" onclick="Q9" class="btn btn-info">a.) Suboptimal Solution</button></h3>
-                        <h3><button name="Wrong10" onclick="Q9" class="btn btn-info">b.) Parallelism</button></h3>
-                        <h3><button name="Wrong10" onclick="Q9" class="btn btn-info">c.) Algorithm Efficiency</button></h3>
-                        <h3><button name="Wrong10" onclick="Q9" class="btn btn-info">d.) Memory Access</button></h3>
+                        <h2>10. What is the purpose of MVC architecture in software development?</h2>
+                        <h3><button name="Correct10" onclick="Q9" class="btn btn-info">a.) Managing version control</button></h3>
+                        <h3><button name="Wrong10" onclick="Q9" class="btn btn-info">b.)Organizing code into separate layers</button></h3>
+                        <h3><button name="Wrong10" onclick="Q9" class="btn btn-info">c.) Creating user interfaces</button></h3>
+                        <h3><button name="Wrong10" onclick="Q9" class="btn btn-info">d.) Testing application compatibility</button></h3>
                     </div>
                 </div>
             ';
@@ -422,7 +422,15 @@ if (isset($_COOKIE["Username"])) {
         include("Connect.php");
 
         echo '
-        
+        <div class="container" id="Q10">
+                    <div class="jumbotron Content3C">
+                        <h2>10. What is the purpose of MVC architecture in software development?</h2>
+                        <h3><button name="Correct10" onclick="Q9" class="btn btn-info">a.) Managing version control</button></h3>
+                        <h3><button name="Wrong10" onclick="Q9" class="btn btn-info">b.)Organizing code into separate layers</button></h3>
+                        <h3><button name="Wrong10" onclick="Q9" class="btn btn-info">c.) Creating user interfaces</button></h3>
+                        <h3><button name="Wrong10" onclick="Q9" class="btn btn-info">d.) Testing application compatibility</button></h3>
+                    </div>
+                </div>
         ';
     }
 } else {
@@ -439,13 +447,13 @@ if (isset($_COOKIE["Username"])) {
     if (isset($_POST["Correct10"])) {
         include("Connect.php");
     
-        $sql = "UPDATE userlogin SET AlgoCompScore = AlgoCompScore + 1 WHERE Username = '" . $_COOKIE["Username"] . "' ";
+        $sql = "UPDATE userlogin SET AppDevScore = AppDevScore + 1 WHERE Username = '" . $_COOKIE["Username"] . "' ";
     
         if (mysqli_query($con, $sql)) {
             echo '
                 <div class="container">
                     <div class="jumbotron Content3C">
-                        <a href="AlgorithmAndComplexityScore.php"><button class="btn btn-info btn-EvenBigger" type="submit" name="TestDone">Submit</button></a>
+                        <a href="ApplicationAndDevelopmentScore.php"><button class="btn btn-info btn-EvenBigger" type="submit" name="TestDone">Submit</button></a>
                     </div>
                 </div>
             ';
@@ -456,7 +464,7 @@ if (isset($_COOKIE["Username"])) {
         echo '
             <div class="container">
                 <div class="jumbotron Content3C">
-                    <a href="AlgorithmAndComplexityScore.php"><button class="btn btn-info btn-EvenBigger" type="submit" name="TestDone">Submit</button></a>
+                    <a href="ApplicationAndDevelopmentScore.php"><button class="btn btn-info btn-EvenBigger" type="submit" name="TestDone">Submit</button></a>
                 </div>
             </div>
         ';
