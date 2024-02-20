@@ -336,6 +336,13 @@ if (isset($_COOKIE["Username"])) {
 
 
 
+
+
+?>
+</form>
+
+<?php 
+
 if (isset($_COOKIE["Username"])) {
     if (isset($_POST["Correct10"])) {
         include("Connect.php");
@@ -437,7 +444,7 @@ if (isset($_COOKIE["Username"])) {
 </div>
 
 -->
-</form>
+
 
 <?php
 /*

@@ -53,21 +53,50 @@ ob_start();
 </html>
 
 <?php
+include("Connect.php");
 
+/*
+while ($Recs = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+    $a = $Recs["AlgoCompScore"];
+}
+*/
+
+// setcookie("AlgoCompScore", $_POST["AlgoCompScore"], time() + 3600);
 
 if (isset($_COOKIE["Username"])) {
-    include("Connect.php");
+    $sql = "SELECT * FROM userlogin WHERE Username = '". $_COOKIE["Username"] . "'";
+    $result = mysqli_query($con, $sql);
 
-    if (isset($_POST["Reset"])) {
-        
+    if ($result) {
+        $userInfo = mysqli_fetch_assoc($result);
 
-        $sql = "UPDATE userlogin SET AlgoCompScore = 0 WHERE Username = '". $_COOKIE["Username"] ."'";
+        // Now $userInfo contains all columns associated with the given Username
+        $algoCompScore = $userInfo["AlgoCompScore"];
 
-        header("Location: AlgorithmAndComplexity.php");
+        echo '
+            <div class="container">
+                <div class="jumbotron Content3C">
+                    <h2>You Scored:</h2>
+                    <h1>'. $algoCompScore .'</h1>
+                </div>
+            </div>
+        ';
+    } else {
+        echo "Error executing the query: " . mysqli_error($con);
     }
+} else {
+    echo "Err...";
 }
 
 
+/*
+if (isset($_POST["Reset"])) {
+    
+
+    // $sql = "UPDATE userlogin SET AlgoCompScore = 0 WHERE Username = '". $_COOKIE["Username"] ."'";
+    // header("Location: AlgorithmAndComplexity.php");
+}
+*/
 ?>
 
 <script>

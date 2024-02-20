@@ -24,11 +24,12 @@ $result = mysqli_query($con, $sql);
 
 while ($Recs = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
     $a = $Recs["Username"];
+    $b = $Recs["AlgoCompScore"];
 }
 
 // Cookies (Meaning: If you're already signed in, naglo-load pa rin yung data mo)
 if (isset($_COOKIE["Username"])) {
-    $view = "SELECT Username, Password FROM userlogin WHERE Username = '". $_COOKIE["Username"] ."' ";
+    $view = "SELECT Username, Password, AlgoCompScore FROM userlogin WHERE Username = '". $_COOKIE["Username"] ."' ";
     $viewGO = mysqli_query($con, $view) or die(mysqli_error($con));
 
     if (mysqli_num_rows($viewGO) > 0) {
