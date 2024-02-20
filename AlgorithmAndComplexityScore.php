@@ -1,7 +1,7 @@
 <?php
 ob_start();
 
-include("AlgorithmAndComplexity.php");
+include("AlgorithmAndComplexityScoreProcess.php");
 ?>
 
 <!DOCTYPE html>
@@ -47,7 +47,8 @@ include("AlgorithmAndComplexity.php");
     <div class="jumbotron Content3C">
         <h2>Wanna try again?</h2>
 
-        <a href="AlgorithmAndComplexity.html"><button class="btn btn-info btn-bigger" onclick="ResetScore()">Yeah!</button></a>
+        <a href="AlgorithmAndComplexity.php"><button class="btn btn-info btn-bigger" onclick="ResetScore()">Yeah!</button></a>
+        <a href="AlgorithmAndComplexityScore.php?Reset=true">ResetScore</a>
     </div>
 </div>
 
@@ -68,3 +69,15 @@ function loadFinalScore() {
 
 </body>
 </html>
+
+<?php
+function ResetScore() {
+    $ScoreCount = 0;
+}
+
+if (isset($_GET["Reset"])) {
+    ResetScore();
+    header("Location: AlgorithmAndComplexity.php");
+}
+
+?>

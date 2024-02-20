@@ -1,5 +1,7 @@
 <?php
 ob_start();
+
+include("AlgorithmAndComplexityScoreProcess.php");
 ?>
 
 <!DOCTYPE html>
@@ -33,13 +35,18 @@ ob_start();
     </div>
 </div>
 
+<form action="AlgorithmAndComplexityScoreProcess.php" method="get">
+
 <div class="container">
     <div class="jumbotron Content3C">
         <h2>1. ____ gives a high-level description of an algorithm without the ambiguity associated with plain text but also without the need to know the syntax of a particular programming language.</h2>
         <h3><button class="btn btn-info" id="btn-changeRed001" onclick="Wrong1()">a.) Output </button></h3>
         <h3><button class="btn btn-info" id="btn-changeRed1" onclick="Wrong1()">b.) Algorithm </button></h3>
         <h3><button class="btn btn-info" id="btn-changeRed01" onclick="Wrong1()">c.) Unambiguous </button></h3>
-        <h3><button class="btn btn-info" id="btn-changeGreen1" onclick="Correct1()">d.) Pseudocode </button></h3> <a href="AlgorithmAndComplexity.php?Correct1=true"></a>
+        <h3><button class="btn btn-info" id="btn-changeGreen1" onclick="Correct1()">d.) Pseudocode </button></h3> 
+        
+        
+        <button name="Correct1">Answer <?php echo $ScoreCount; ?></button>
     </div>
 </div>
 
@@ -135,26 +142,54 @@ ob_start();
 
 <div class="container">
     <div class="jumbotron Content3C">
-        <a href="AlgorithmAndComplexityScore.php"><button class="btn btn-info btn-EvenBigger" onclick="updateFinalScore()">Submit</button></a>
+        <a href="AlgorithmAndComplexityScore.php"><button class="btn btn-info btn-EvenBigger" onclick="updateFinalScore()" type="submit" name="TestDone">Submit</button></a>
     </div>
 </div>
 
+<!-- -->
 <div class="container">
     <div class="jumbotron Content3C">
         <h2>You Scored:</h2>
 
-        <h1 id="Score"></h1>
+        <h1 id="Score"> <?php echo $ScoreCount; ?></h1>
     </div>
 </div>
+
+</form>
+
+<?php
+
+$ScoreCount = 0;
+$FinalScore = 0;
+
+/*
+function Correct1() {
+    global $ScoreCount;
+    $ScoreCount++;
+}
+*/
+
+if (isset($_POST["Correct1"])) {
+    $ScoreCount++;
+    echo "<h1>Test</h1>";
+}
+
+
+/*
+$ScoreCount = 0;
+
+function Correct1() {
+    global $ScoreCount;
+    $ScoreCount++;
+    echo $ScoreCount;
+}
+
+if (isset($_GET["Correct1"])) {
+    Correct1();
+}
+*/
+?>
 
 </body>
 </html>
 
-<?php
-$ScoreCount = 0;
-
-if (isset($_GET["Correct1"])) {
-    $ScoreCount++;
-}
-
-?>
