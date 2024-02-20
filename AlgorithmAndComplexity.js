@@ -9,6 +9,7 @@ function ResetScore() {
     ScoreCount = 0;
 }
 
+/*
 function updateFinalScore() {
     finalScoreValue = ScoreCount;
 
@@ -18,6 +19,7 @@ function updateFinalScore() {
     // You can uncomment the line below if you want to redirect after storing the score
     // window.location.href = 'AlgorithmAndComplexityScores.html';
 }
+*/
 
 function loadFinalScore() {
     // Retrieve the stored finalScoreValue
@@ -225,6 +227,46 @@ function Correct10() {
     Score();
 }
 
+
+function Q1() {
+    document.getElementById("Q1").innerHTML = "";
+}
+
+function Q2() {
+    document.getElementById("Q2").innerHTML = "";
+}
+
+function Q3() {
+    document.getElementById("Q3").innerHTML = "";
+}
+
+function Q4() {
+    document.getElementById("Q4").innerHTML = "";
+}
+
+function Q5() {
+    document.getElementById("Q5").innerHTML = "";
+}
+
+function Q6() {
+    document.getElementById("Q6").innerHTML = "";
+}
+
+function Q7() {
+    document.getElementById("Q7").innerHTML = "";
+}
+
+function Q8() {
+    document.getElementById("Q8").innerHTML = "";
+}
+
+function Q9() {
+    document.getElementById("Q9").innerHTML = "";
+}
+
+function Q10() {
+    document.getElementById("Q10").innerHTML = "";
+}
 
 /* Pina-cancel yung fill in the blanks eh hahaha.
 function FillBlanks() {

@@ -1,7 +1,5 @@
 <?php
 ob_start();
-
-include("AlgorithmAndComplexityScoreProcess.php");
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +37,7 @@ include("AlgorithmAndComplexityScoreProcess.php");
     <div class="jumbotron Content3C">
         <h2>You Scored:</h2>
 
-        <h1 id="FinalScore"> <?php echo $ScoreCount; ?></h1>
+        <h1><?php echo ""; ?></h1>
     </div>
 </div>
 
@@ -47,10 +45,30 @@ include("AlgorithmAndComplexityScoreProcess.php");
     <div class="jumbotron Content3C">
         <h2>Wanna try again?</h2>
 
-        <a href="AlgorithmAndComplexity.php"><button class="btn btn-info btn-bigger" onclick="ResetScore()">Yeah!</button></a>
-        <a href="AlgorithmAndComplexityScore.php?Reset=true">ResetScore</a>
+        <a href="AlgorithmAndComplexity.php"><button class="btn btn-info btn-bigger" name="Reset">Yeah!</button></a>
     </div>
 </div>
+
+</body>
+</html>
+
+<?php
+
+
+if (isset($_COOKIE["Username"])) {
+    include("Connect.php");
+
+    if (isset($_POST["Reset"])) {
+        
+
+        $sql = "UPDATE userlogin SET AlgoCompScore = 0 WHERE Username = '". $_COOKIE["Username"] ."'";
+
+        header("Location: AlgorithmAndComplexity.php");
+    }
+}
+
+
+?>
 
 <script>
 /*
@@ -66,18 +84,3 @@ function loadFinalScore() {
 }
 */
 </script>
-
-</body>
-</html>
-
-<?php
-function ResetScore() {
-    $ScoreCount = 0;
-}
-
-if (isset($_GET["Reset"])) {
-    ResetScore();
-    header("Location: AlgorithmAndComplexity.php");
-}
-
-?>
