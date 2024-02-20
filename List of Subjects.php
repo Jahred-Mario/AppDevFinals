@@ -31,7 +31,6 @@
     <div class="jumbotron Content3C">
 
     <?php
-
 include("Connect.php");
 
 if (isset($_COOKIE["Username"])) {
@@ -43,6 +42,7 @@ if (isset($_COOKIE["Username"])) {
 
         // Now $userInfo contains all columns associated with the given Username
         $AlgoCompScore = $userInfo["AlgoCompScore"];
+        $AvgScore = number_format(($userInfo["AlgoCompScore"] + $userInfo["AppDevScore"] + $userInfo["ArchiOrgScore"] + $userInfo["HCIScore"] + $userInfo["IntelSysScore"] + $userInfo["OSScore"] + $userInfo["SoftEngScore"]) / 7);
 
         // Algorithm and Complexity
         if ($AlgoCompScore == 10) {
@@ -417,15 +417,59 @@ if (isset($_COOKIE["Username"])) {
                 <br />
             ';
         }
+
+
+
+        // Software Engineering
+        if ($AvgScore == 10) {
+            echo '
+                <h1>Your Average Score:</h1>
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="'. $AvgScore .'" aria-valuemin="0" aria-valuemax="100" style="width: '. $AvgScore .'0%">'. $AvgScore .' out of 10</div>
+                </div>
+            ';
+        } else if ($AvgScore >= 7) {
+            echo '
+                <h1>Your Average Score:</h1>
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="'. $AvgScore .'" aria-valuemin="0" aria-valuemax="100" style="width: '. $AvgScore .'0%">'. $AvgScore .' out of 10</div>
+                </div>
+            ';
+        } else if ($AvgScore >= 4) {
+            echo '
+                <h1>Your Average Score:</h1>
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="'. $AvgScore .'" aria-valuemin="0" aria-valuemax="100" style="width: '. $AvgScore .'0%">'. $AvgScore .' out of 10</div>
+                </div>
+            ';
+        } else if ($AvgScore >= 1) {
+            echo '
+                <h1>Your Average Score:</h1>
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="'. $AvgScore .'" aria-valuemin="0" aria-valuemax="100" style="width: '. $AvgScore .'0%">'. $AvgScore .' out of 10</div>
+                </div>
+            ';
+        } else {
+            echo '
+                <h3>No Record yet.</h3>
+                <br />
+            ';
+        }
         
     } else {
         echo "Error executing the query: " . mysqli_error($con);
     }
 } else {
-    echo "Err...";
+    echo "<h1>Err...</h1>";
 }
 
 ?>
+
+    
 
     </div>
 </div>
