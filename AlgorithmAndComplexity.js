@@ -11,13 +11,28 @@ function ResetScore() {
 
 function updateFinalScore() {
     finalScoreValue = ScoreCount;
-    document.getElementById("FinalScore").innerHTML = finalScoreValue;
+
+    // Store the final score in local storage
+    localStorage.setItem('finalScoreValue', finalScoreValue);
+
+    // You can uncomment the line below if you want to redirect after storing the score
+    // window.location.href = 'AlgorithmAndComplexityScores.html';
 }
 
-function MultiCall() {
-    Score(); // Update the score
-    updateFinalScore(); // Update the final score
+function loadFinalScore() {
+    // Retrieve the stored finalScoreValue
+    var storedFinalScore = localStorage.getItem('finalScoreValue');
+
+    // Check if there is a stored value
+    if (storedFinalScore !== null) {
+        // Update the finalScoreValue variable
+        finalScoreValue = parseInt(storedFinalScore);
+
+        // Update the HTML element
+        document.getElementById("FinalScore").innerHTML = finalScoreValue;
+    }
 }
+
 
 
 function Wrong1() {

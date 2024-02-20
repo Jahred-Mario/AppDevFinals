@@ -55,30 +55,32 @@ if (isset($_COOKIE["Username"])) {
             </div> ';
     } else {
         echo '
-            <div class="">
-                <div class="jumbotron text-center Top3C">
-                    <h1>Sample Title</h1>
-                    <h2>Your Reviewer Sample</h2>
             
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <h2>Welcome, User!</h2>
-                        </div>
-            
-                        <div class="col-sm-4">
-                            <a href="Login Form.php"><button class="btn btn-info btn-bigger">Sign Up / Log In</button></a>
-                        </div>
-            
-                        <div class="col-sm-4">
-                            <h2>Logo ata here?</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
         ';
     }
 } else {
-    echo "GINAGAWA MO?";
+    echo '
+        <div class="">
+            <div class="jumbotron text-center Top3C">
+                <h1>Sample Title</h1>
+                <h2>Your Reviewer Sample</h2>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h2>Welcome, User!</h2>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <a href="Login Form.php"><button class="btn btn-info btn-bigger">Sign Up / Log In</button></a>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <h2>Logo ata here?</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ';
 }
 ?>
 
