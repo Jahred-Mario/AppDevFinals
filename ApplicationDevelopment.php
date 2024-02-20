@@ -453,7 +453,7 @@ if (isset($_COOKIE["Username"])) {
             echo '
                 <div class="container">
                     <div class="jumbotron Content3C">
-                        <a href="ApplicationAndDevelopmentScore.php"><button class="btn btn-info btn-EvenBigger" type="submit" name="TestDone">Submit</button></a>
+                        <a href="ApplicationDevelopmentScore.php"><button class="btn btn-info btn-EvenBigger" type="submit" name="TestDone">Submit</button></a>
                     </div>
                 </div>
             ';
@@ -464,7 +464,7 @@ if (isset($_COOKIE["Username"])) {
         echo '
             <div class="container">
                 <div class="jumbotron Content3C">
-                    <a href="ApplicationAndDevelopmentScore.php"><button class="btn btn-info btn-EvenBigger" type="submit" name="TestDone">Submit</button></a>
+                    <a href="ApplicationDevelopmentScore.php"><button class="btn btn-info btn-EvenBigger" type="submit" name="TestDone">Submit</button></a>
                 </div>
             </div>
         ';

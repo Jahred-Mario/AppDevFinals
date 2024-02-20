@@ -424,7 +424,15 @@ if (isset($_COOKIE["Username"])) {
         include("Connect.php");
 
         echo '
-        
+            <div class="container" id="Q10">
+                <div class="jumbotron Content3C">
+                    <h2>10. Which of the following is the disadvantages of Divided and Conquer?</h2>
+                    <h3><button name="Correct10" onclick="Q9" class="btn btn-info">a.) Suboptimal Solution</button></h3>
+                    <h3><button name="Wrong10" onclick="Q9" class="btn btn-info">b.) Parallelism</button></h3>
+                    <h3><button name="Wrong10" onclick="Q9" class="btn btn-info">c.) Algorithm Efficiency</button></h3>
+                    <h3><button name="Wrong10" onclick="Q9" class="btn btn-info">d.) Memory Access</button></h3>
+                </div>
+            </div>
         ';
     }
 } else {

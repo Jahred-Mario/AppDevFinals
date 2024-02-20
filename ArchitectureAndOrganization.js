@@ -277,3 +277,45 @@ function Correct10() {
 
     document.getElementById("btn-changeGreen10").disabled = true;
 }
+
+
+
+function Q1() {
+    document.getElementById("Q1").innerHTML = "";
+}
+
+function Q2() {
+    document.getElementById("Q2").innerHTML = "";
+}
+
+function Q3() {
+    document.getElementById("Q3").innerHTML = "";
+}
+
+function Q4() {
+    document.getElementById("Q4").innerHTML = "";
+}
+
+function Q5() {
+    document.getElementById("Q5").innerHTML = "";
+}
+
+function Q6() {
+    document.getElementById("Q6").innerHTML = "";
+}
+
+function Q7() {
+    document.getElementById("Q7").innerHTML = "";
+}
+
+function Q8() {
+    document.getElementById("Q8").innerHTML = "";
+}
+
+function Q9() {
+    document.getElementById("Q9").innerHTML = "";
+}
+
+function Q10() {
+    document.getElementById("Q10").innerHTML = "";
+}
