@@ -33,13 +33,35 @@ ob_start();
     </div>
 </div>
 
-<div class="container">
-    <div class="jumbotron Content3C">
-        <h2>You Scored:</h2>
+<?php
+include("Connect.php");
 
-        <h1><?php echo ""; ?></h1>
-    </div>
-</div>
+if (isset($_COOKIE["Username"])) {
+    $sql = "SELECT * FROM userlogin WHERE Username = '". $_COOKIE["Username"] . "'";
+    $result = mysqli_query($con, $sql);
+
+    if ($result) {
+        $userInfo = mysqli_fetch_assoc($result);
+
+        // Now $userInfo contains all columns associated with the given Username
+        $SubScore = $userInfo["AlgoCompScore"];
+
+        echo '
+            <div class="container">
+                <div class="jumbotron Content3C">
+                    <h2>You Scored:</h2>
+                    <h1>'. $SubScore .'</h1>
+                </div>
+            </div>
+        ';
+    } else {
+        echo "Error executing the query: " . mysqli_error($con);
+    }
+} else {
+    echo "Err...";
+}
+
+?>
 
 <div class="container">
     <div class="jumbotron Content3C">
@@ -53,40 +75,7 @@ ob_start();
 </html>
 
 <?php
-include("Connect.php");
 
-/*
-while ($Recs = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
-    $a = $Recs["AlgoCompScore"];
-}
-*/
-
-// setcookie("AlgoCompScore", $_POST["AlgoCompScore"], time() + 3600);
-
-if (isset($_COOKIE["Username"])) {
-    $sql = "SELECT * FROM userlogin WHERE Username = '". $_COOKIE["Username"] . "'";
-    $result = mysqli_query($con, $sql);
-
-    if ($result) {
-        $userInfo = mysqli_fetch_assoc($result);
-
-        // Now $userInfo contains all columns associated with the given Username
-        $algoCompScore = $userInfo["AlgoCompScore"];
-
-        echo '
-            <div class="container">
-                <div class="jumbotron Content3C">
-                    <h2>You Scored:</h2>
-                    <h1>'. $algoCompScore .'</h1>
-                </div>
-            </div>
-        ';
-    } else {
-        echo "Error executing the query: " . mysqli_error($con);
-    }
-} else {
-    echo "Err...";
-}
 
 
 /*

@@ -92,7 +92,7 @@ if (isset($_COOKIE["Username"])) {
 <div class="container">
     <div class="jumbotron text-center Content3C">
         <a href="Subject Choices.html"><button class="btn btn-info bigBtns">Start Quiz</button></a> <br><br>
-        <a href="List of Subjects.html"><button class="btn btn-info bigBtns">Score Records</button></a> <br><br>
+        <a href="List of Subjects.php"><button class="btn btn-info bigBtns">Score Records</button></a> <br><br>
         <a href="Credits.html"><button class="btn btn-info bigBtns">Credits</button></a>
     </div>
 </div>
