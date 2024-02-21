@@ -21,7 +21,7 @@ ob_start();
         <h1>ComScieReview</h1>
         <h2>Your Ultimate CS Companion for Beginner-Friendly Coding</h2>
 
-        <a href="index.php"><button class="btn btn-info">Back to Menu</button></a>
+        <a href="LoggedIndex.php"><button class="btn btn-info">Back to Menu</button></a>
     </div>
 </div>
 
