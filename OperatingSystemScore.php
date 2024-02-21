@@ -15,21 +15,14 @@ ob_start();
     <link rel="stylesheet" href="Custom.css">
     <script src="OperatingSystem.js"></script>
 </head>
-<body onload="MultiCall()">
+<body style="background-image: url('Pictures/SubBG.jpg'); background-size: 100%;">
 
 <div class="">
     <div class="jumbotron text-center Top3C">
-        <h1>Sample Title</h1>
-        <h2>Your Reviewer Sample</h2>
+        <h1>Operating System</h1>
 
         <a href="LoggedIndex.php"><button class="btn btn-info btn-bigger">Back to Menu</button></a>
         <a href="Subject Choices.html"><button class="btn btn-info btn-bigger">Back to Subjects</button></a>
-    </div>
-</div>
-
-<div class="container">
-    <div class="jumbotron text-center Content3C">
-        <h1>Operating System</h1>
     </div>
 </div>
 
@@ -67,7 +60,7 @@ if (isset($_COOKIE["Username"])) {
     <div class="jumbotron Content3C">
         <h2>Wanna try again?</h2>
 
-        <a href="AlgorithmAndComplexity.php"><button class="btn btn-info btn-bigger" name="Reset">Yeah!</button></a>
+        <a href="OperatingSystem.php"><button class="btn btn-info btn-bigger" name="Reset">Yeah!</button></a>
     </div>
 </div>
 

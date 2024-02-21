@@ -15,12 +15,11 @@ ob_start();
     <link rel="stylesheet" href="Custom.css">
     <script src="IntelligentSystems.js"></script>
 </head>
-<body>
+<body style="background-image: url('Pictures/SubBG.jpg'); background-size: 100%;">
 
 <div class="">
     <div class="jumbotron text-center Top3C">
-        <h1>Sample Title</h1>
-        <h2>Your Reviewer Sample</h2>
+        <h1>Intelligent Systems</h1>
 
         <a href="LoggedIndex.php"><button class="btn btn-info btn-bigger">Back to Menu</button></a>
         <a href="Subject Choices.html"><button class="btn btn-info btn-bigger">Back to Subjects</button></a>
@@ -29,8 +28,6 @@ ob_start();
 
 <div class="container">
     <div class="jumbotron text-center Content3C">
-        <h1>Intelligent Systems</h1>
-
         <form action="IntelligentSystems.php" method="post">
             <button name="Begin" type="" class="btn btn-info"  id="" onclick="">Start</button>
         </form>

@@ -1,14 +1,25 @@
 .Top3C {
-    background-color: #00ABE4;
+    /*background-color: #00ABE4;*/
+    background-color: #302f49;
     color: white;
 }
 
 .Content3C {
-    background-color: #E9F1FA;
+    background-color: #b8c0c9;
+    width: 60%;
+    margin-left: -20%;
 }
 
 .bigBtns {
-    font-size: 65px;
+    font-size: 35px;
+    width: 20%;
+    margin-left: 9.5%;
+    border-radius: 0%;
+}
+
+.CircleBtn {
+    border-radius: 24px;
+    font-size: 20px;
 }
 
 .blkBtnTxt {

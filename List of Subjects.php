@@ -10,23 +10,16 @@
 
     <link rel="stylesheet" href="Custom.css">
 </head>
-<body>
+<body style="background-image: url('Pictures/AndikWallpaper.jpg'); background-size: 100%;" onload="titleEdit()">
     
 <div class="">
     <div class="jumbotron text-center Top3C">
-        <h1>Sample Title</h1>
-        <h2>Your Reviewer Sample</h2>
+        <h1>Your Scores</h1>
 
         <a href="LoggedIndex.php"><button class="btn btn-info btn-bigger">Back to Menu</button></a>
     </div>
 </div>
 
-<div class="container">
-    <div class="jumbotron text-center Content3C">
-        <h1>Your Scores:</h1>
-    </div>
-</div>
-    
 <div class="container">
     <div class="jumbotron Content3C">
 

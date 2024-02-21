@@ -14,7 +14,7 @@ ob_start();
 
     <link rel="stylesheet" href="Custom.css">
 </head>
-<body>
+<body style="background-image: url('Pictures/AndikWallpaper.jpg'); background-size: 100%;" onload="titleEdit()">
 
 <?php
 include("Connect.php");
@@ -36,20 +36,22 @@ if (isset($_COOKIE["Username"])) {
         echo '
             <div class="">
                 <div class="jumbotron text-center Top3C">
-                    <h1>Sample Title</h1>
-                    <h2>Your Reviewer Sample</h2>
+                    <h1 id="Pamagat">ComScieReview</h1>
+                    <h2 id="SubPamagat">Your Ultimate CS Companion for Beginner-Friendly Coding</h2>
             
                     <div class="row">
                         <div class="col-sm-4">
+                            <br>
                             <h2>Welcome, '. $_COOKIE["Username"] .'</h2>
                         </div>
-            
+
                         <div class="col-sm-4">
-                            <a href="index.php"><button class="btn btn-info btn-bigger">Sign Out</button></a>
+                            <br><br>
+                            <a href="Login Form.php"><button class="btn btn-info btn-bigger">Sign Up / Log In</button></a>
                         </div>
-            
+
                         <div class="col-sm-4">
-                            <h2>Logo ata here?</h2>
+                            <img src="Pictures/Logo.png" alt="" height="128">
                         </div>
                     </div>
                 </div>
@@ -63,20 +65,22 @@ if (isset($_COOKIE["Username"])) {
     echo '
         <div class="">
             <div class="jumbotron text-center Top3C">
-                <h1>Sample Title</h1>
-                <h2>Your Reviewer Sample</h2>
+                <h1 id="Pamagat">ComScieReview</h1>
+                <h2 id="SubPamagat">Your Ultimate CS Companion for Beginner-Friendly Coding</h2>
 
                 <div class="row">
                     <div class="col-sm-4">
-                        <h2>Welcome, User!</h2>
+                        <br>
+                        <h2>Welcome User!</h2>
                     </div>
 
                     <div class="col-sm-4">
+                        <br><br>
                         <a href="Login Form.php"><button class="btn btn-info btn-bigger">Sign Up / Log In</button></a>
                     </div>
 
                     <div class="col-sm-4">
-                        <h2>Logo ata here?</h2>
+                        <img src="Pictures/Logo.png" alt="" height="128">
                     </div>
                 </div>
             </div>
@@ -89,14 +93,10 @@ if (isset($_COOKIE["Username"])) {
 
 -->
 
-<div class="container">
-    <div class="jumbotron text-center Content3C">
-        <a href="Subject Choices.html"><button class="btn btn-info bigBtns">Start Quiz</button></a> <br><br>
-        <a href="List of Subjects.php"><button class="btn btn-info bigBtns">Score Records</button></a> <br><br>
-        <a href="Credits.html"><button class="btn btn-info bigBtns">Credits</button></a>
-    </div>
-</div>
-    
+<a href="Subject Choices.html"><button class="btn btn-info bigBtns">Start Quiz</button></a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="List of Subjects.php"><button class="btn btn-info bigBtns">Score Records</button></a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Credits.html"><button class="btn btn-info bigBtns">???</button></a>
+
 </body>
 </html>
 

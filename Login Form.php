@@ -14,20 +14,20 @@ ob_start();
 
     <link rel="stylesheet" href="Custom.css">
 </head>
-<body>
+<body style="background-image: url('Pictures/FrontPageBG.jpg'); background-size: 100%;" onload="titleEdit()">
     
 <div class="">
     <div class="jumbotron text-center Top3C">
-        <h1>Sample Title</h1>
-        <h2>Your Reviewer Sample</h2>
+        <h1>ComScieReview</h1>
+        <h2>Your Ultimate CS Companion for Beginner-Friendly Coding</h2>
 
         <a href="index.php"><button class="btn btn-info">Back to Menu</button></a>
     </div>
 </div>
 
-<div class="container">
+<div class="container text-center">
     <div class="jumbotron  Content3C">
-        <h1 class="">Log in Form:</h1>
+        <h1 class="">Log in</h1>
 
         <form action="Login Form.php" method="post">
             <h2>Username:</h2>
@@ -41,7 +41,7 @@ ob_start();
         </form>
 
         <br /><br /><br />
-        <h1>Not a member? Sign up!</h1>
+        <h1>Sign up!</h1>
         
         <form action="Login Form.php" method="post">
             <h2>First Name:</h2>

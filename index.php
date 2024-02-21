@@ -11,10 +11,11 @@ ob_start();
 
     <link rel="stylesheet" href="Extensions/Bootstrap 3.css">
     <script src="Extensions/Bootstrap 3.js"></script>
+    <script src="FinalProjectTitle.js"></script>
 
     <link rel="stylesheet" href="Custom.css">
 </head>
-<body>
+<body style="background-image: url('Pictures/AndikWallpaper.jpg'); background-size: 100%;" onload="titleEdit()">
 
 <?php
 include("Connect.php");
@@ -34,32 +35,30 @@ if (isset($_COOKIE["UserName"])) {
 
 <div class="">
     <div class="jumbotron text-center Top3C">
-        <h1>Sample Title</h1>
-        <h2>Your Reviewer Sample</h2>
+        <h1 id="Pamagat">Sample Title</h1>
+        <h2 id="SubPamagat">Your Reviewer Sample</h2>
 
         <div class="row">
             <div class="col-sm-4">
+                <br>
                 <h2>Welcome User!</h2>
             </div>
 
             <div class="col-sm-4">
+                <br><br>
                 <a href="Login Form.php"><button class="btn btn-info btn-bigger">Sign Up / Log In</button></a>
             </div>
 
             <div class="col-sm-4">
-                <h2>Logo ata here?</h2>
+                <img src="Pictures/Logo.png" alt="" height="128">
             </div>
         </div>
     </div>
 </div> 
 
-<div class="container">
-    <div class="jumbotron text-center Content3C">
-        <a href="Subject Choices.html"><button class="btn btn-info bigBtns">Start Quiz</button></a> <br><br>
-        <a href="List of Subjects.php"><button class="btn btn-info bigBtns">Score Records</button></a> <br><br>
-        <a href="Credits.html"><button class="btn btn-info bigBtns">Credits</button></a>
-    </div>
-</div>
+<a href="Subject Choices.html"><button class="btn btn-info bigBtns">Start Quiz</button></a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="List of Subjects.php"><button class="btn btn-info bigBtns">Score Records</button></a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Credits.html"><button class="btn btn-info bigBtns">???</button></a>
 
 </body>
 </html>
